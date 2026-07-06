@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="infos">
+                <div class="info">
+                    <h3>High Score:
+                        <span id="high-score">0</span>
+                    </h3>
+                </div>
+                <div class="info">
+                    <h3>Score:
+                        <span id="score">0</span>
+                    </h3>
+                </div>
+                <div class="info">
+                    <h3>Time:
+                        <span id="time">00-00</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="board"></div>
+        </section>
+        <div class="modal">
+            <div class="modal-card">
+                <div class="start-game">
+                    <h3>Welcome to the Snake Game</h3>
+                    <button class="btn btn-start">Start Game</button>
+                </div>
+                <div class="game-over">
+                    <h3>Game Over</h3>
+                    <button class="btn btn-restart">
+                        Restart Game
+                    </button>
+                </div>
+                <div class="game-paused">
+                    <h3>Game Paused</h3>
+                    <button class="btn btn-resume">
+                        Resume Game
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
